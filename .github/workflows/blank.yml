@@ -24,7 +24,7 @@ jobs:
 
     - name: Compile LaTeX document
       run: |
-        pdflatex  -interaction=batchmode  cv-llt.tex
+        pdflatex  -interaction=nonstop cv-llt.tex
         
     - name: Check for PDF output
       run: |
