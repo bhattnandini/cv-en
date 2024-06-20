@@ -1,0 +1,72 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{Jadeja_Bhatt_Vaghela_2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=99131e50a10b6917c37ac93d5e3e21d8}{%
+           family={Jadeja},
+           familyi={J\bibinitperiod},
+           given={Sejpalsinh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc338332f2da4b18971caddb770946a1}{%
+           family={Bhatt},
+           familyi={B\bibinitperiod},
+           given={Nandini\bibnamedelima Jayeshbhai},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb35dfc94484bdbf1972cebdda9ab7b1}{%
+           family={Vaghela},
+           familyi={V\bibinitperiod},
+           given={Ravirajsinh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a2a1fde31e4cf3b30dea79efb74aeec1}
+      \strng{fullhash}{a2a1fde31e4cf3b30dea79efb74aeec1}
+      \strng{bibnamehash}{a2a1fde31e4cf3b30dea79efb74aeec1}
+      \strng{authorbibnamehash}{a2a1fde31e4cf3b30dea79efb74aeec1}
+      \strng{authornamehash}{a2a1fde31e4cf3b30dea79efb74aeec1}
+      \strng{authorfullhash}{a2a1fde31e4cf3b30dea79efb74aeec1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of health sciences}
+      \field{month}{10}
+      \field{number}{S9}
+      \field{title}{A modern tech-driven approach to prognosis powered by realtime health care record updates from the patients}
+      \field{volume}{6}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{3836\bibrangedash 3847}
+      \range{pages}{12}
+      \verb{urlraw}
+      \verb https://sciencescholar.us/journal/index.php/ijhs/article/view/13487
+      \endverb
+      \verb{url}
+      \verb https://sciencescholar.us/journal/index.php/ijhs/article/view/13487
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

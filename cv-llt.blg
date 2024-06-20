@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'cv-llt.blg'
+[41] biber-darwin:340> INFO - === Thu Jun 20, 2024, 21:56:51
+[50] Biber.pm:419> INFO - Reading 'cv-llt.bcf'
+[97] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[105] Biber.pm:4419> INFO - Processing section 0
+[112] Biber.pm:4610> INFO - Looking for bibtex file 'own-bib.bib' for section 0
+[112] bibtex.pm:1713> INFO - LaTeX decoding ...
+[114] bibtex.pm:1519> INFO - Found BibTeX data source 'own-bib.bib'
+[135] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[135] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[135] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[135] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[140] bbl.pm:660> INFO - Writing 'cv-llt.bbl' with encoding 'UTF-8'
+[141] bbl.pm:763> INFO - Output to cv-llt.bbl
+[141] Biber.pm:131> WARN - legacy month field 'Oct.' in entry 'Jadeja_Bhatt_Vaghela_2022' is not an integer - this will probably not sort properly.
+[141] Biber.pm:133> INFO - WARNINGS: 1
