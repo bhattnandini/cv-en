@@ -21,22 +21,9 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install texlive texlive-latex-extra texlive-bibtex-extra biber texlive-fonts-extra
+        apt-get install -y awscli
 
     - name: Compile LaTeX document
       run: |
         pdflatex -interaction=nonstopmode cv-llt.tex
-        
-    - name: Check for PDF output
-      run: |
-        if [ -f "cv-llt.pdf" ]; then
-          echo "::set-output name=pdf_exists::true"
-        else
-          echo "::set-output name=pdf_exists::false"
-        fi
-
-    - name: Upload PDF artifact
-      if: steps.check.outputs.pdf_exists == 'true'
-      uses: actions/upload-artifact@v2
-      with:
-        name: cv-llt.pdf
-        path: cv-llt.pdf
+        aws s3 cp cv-llt.pdf s3://assets.appstasy.in/nandinee/test/
