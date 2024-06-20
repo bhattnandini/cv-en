@@ -38,9 +38,7 @@ jobs:
 
     - name: CloudFront Invalidation
       run: |
-          aws cloudfront create-invalidation \
-            --distribution-id E35O06UYDZ1I7H \
-            --paths "/nandinee/cv/cv_en.pdf"
+          aws cloudfront create-invalidation --distribution-id E35O06UYDZ1I7H --paths "/nandinee/cv/cv_en.pdf"
       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
