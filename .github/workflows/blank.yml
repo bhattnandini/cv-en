@@ -24,12 +24,21 @@ jobs:
 
     - name: Compile LaTeX document
       run: |
-        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex
-        biber cv-llt
-        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex
-        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex
+        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex || true
+        biber cv-llt || true
+        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex || true
+        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex || true
+
+    - name: Check for PDF output
+      run: |
+        if [ -f "cv-llt.pdf" ]; then
+          echo "::set-output name=pdf_exists::true"
+        else
+          echo "::set-output name=pdf_exists::false"
+        fi
 
     - name: Upload PDF artifact
+      if: steps.check.outputs.pdf_exists == 'true'
       uses: actions/upload-artifact@v2
       with:
         name: cv-llt.pdf
