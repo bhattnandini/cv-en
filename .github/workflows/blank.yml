@@ -24,11 +24,8 @@ jobs:
 
     - name: Compile LaTeX document
       run: |
-        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex || true
-        biber cv-llt || true
-        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex || true
-        pdflatex -interaction=nonstopmode -halt-on-error cv-llt.tex || true
-
+        pdflatex  -interaction=batchmode  cv-llt.tex
+        
     - name: Check for PDF output
       run: |
         if [ -f "cv-llt.pdf" ]; then
