@@ -33,5 +33,5 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run:
-        echo 'after'
-        aws s3 cp cv-llt.pdf s3://assets.appstasy.in/nandinee/testafter/ --region ca-central-1 --acl public-read
+        echo 'after\n'
+        aws s3 cp cv-llt.pdf s3://assets.appstasy.in/nandinee/testafter/cv-llt.pdf --region ca-central-1 --acl public-read
