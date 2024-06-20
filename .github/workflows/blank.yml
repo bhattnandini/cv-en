@@ -34,4 +34,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         PDF_PATH=$(realpath cv-llt.pdf)
-        aws s3 cp $PDF_PATH s3://assets.appstasy.in/nandinee/cv/cv-en.pdf --region ca-central-1 --acl public-read
+        aws s3 cp $PDF_PATH s3://assets.appstasy.in/nandinee/cv/cv_en.pdf --region ca-central-1 --acl public-read
