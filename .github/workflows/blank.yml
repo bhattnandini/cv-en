@@ -22,8 +22,8 @@ jobs:
         sudo apt-get update
         sudo apt-get install texlive texlive-latex-extra texlive-bibtex-extra biber texlive-fonts-extra
         sudo apt-get install perl # Required for tlmgr
-        tlmgr update --self --all
         tlmgr init-usertree
+        tlmgr update --self --all
         tlmgr install fontawesome5
 
     - name: Compile LaTeX document
