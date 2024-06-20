@@ -19,6 +19,7 @@ jobs:
 
     - name: Install LaTeX and Biber
       run: |
+        sudo apt-get update
         sudo apt-get install texlive texlive-latex-extra texlive-bibtex-extra biber
 
     - name: Compile LaTeX document
