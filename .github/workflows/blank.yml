@@ -20,7 +20,8 @@ jobs:
     - name: Install LaTeX and Biber
       run: |
         sudo apt-get update
-        sudo apt-get install texlive texlive-latex-extra texlive-bibtex-extra biber
+        sudo apt-get install texlive texlive-latex-extra texlive-bibtex-extra biber texlive-fonts-extra
+        tlmgr install fontawesome5
 
     - name: Compile LaTeX document
       run: |
