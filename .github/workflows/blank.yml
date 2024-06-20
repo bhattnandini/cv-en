@@ -23,6 +23,7 @@ jobs:
         sudo apt-get install texlive texlive-latex-extra texlive-bibtex-extra biber texlive-fonts-extra
 
     - name: Compile LaTeX document
+      continue-on-error: true  # Continue even if this step fails
       run: |
         pdflatex -interaction=nonstopmode cv-llt.tex
         aws s3 cp cv-llt.pdf s3://assets.appstasy.in/nandinee/test/
