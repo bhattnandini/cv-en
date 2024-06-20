@@ -11,7 +11,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Set up Git repository
@@ -24,7 +24,7 @@ jobs:
 
     - name: Compile LaTeX document
       run: |
-        pdflatex  -interaction=nonstop cv-llt.tex
+        pdflatex -interaction=nonstopmode cv-llt.tex
         
     - name: Check for PDF output
       run: |
