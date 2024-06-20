@@ -17,31 +17,21 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v2
 
-    - name: Install LaTeX and Biber
+    - name: Install LaTeX, Biber and fontawesome
       run: |
         sudo apt-get update
         sudo apt-get install texlive texlive-latex-extra texlive-bibtex-extra biber texlive-fonts-extra
 
     - name: Compile LaTeX document
-      continue-on-error: true  # Continue even if this step fails
+      continue-on-error: true  # Continue to other steps even if this step fails
       run: |
         pdflatex -interaction=nonstopmode cv-llt.tex
-        
-    - name: Print PDF path
-      run: |
-            PDF_PATH=$(realpath cv-llt.pdf)
-            echo "Generated PDF path: $PDF_PATH"
-
+      
     - name: Upload PDF to S3 and make it public
       # if: always() # Ensure this step always runs, regardless of previous steps
       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
-        echo 'after'
-        echo "Hello, this is a test file." > testfile.txt
-        aws s3 cp testfile.txt s3://assets.appstasy.in/nandinee/testafter/testfile.txt --region ca-central-1 --acl public-read
         PDF_PATH=$(realpath cv-llt.pdf)
-        echo "Generated PDF path: $PDF_PATH"
-        pwd
-        aws s3 cp $PDF_PATH s3://assets.appstasy.in/nandinee/testafter/cv-llt.pdf --region ca-central-1 --acl public-read
+        aws s3 cp $PDF_PATH s3://assets.appstasy.in/nandinee/cv/cv-en.pdf --region ca-central-1 --acl public-read
