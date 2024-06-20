@@ -25,8 +25,9 @@ jobs:
     - name: Compile LaTeX document
       continue-on-error: true  # Continue even if this step fails
       run: |
-        aws s3 cp cv-llt.pdf s3://assets.appstasy.in/nandinee/testbefore/
+        echo "Hello, this is a test file." > testfile.txt
+        aws s3 cp testfile.txt s3://assets.appstasy.in/nandinee/testbefore/testfile.txt --region ca-central-1 --acl public-read
         echo 'before'
         pdflatex -interaction=nonstopmode cv-llt.tex
         echo 'after'
-        aws s3 cp cv-llt.pdf s3://assets.appstasy.in/nandinee/testafter/
+        aws s3 cp cv-llt.pdf s3://assets.appstasy.in/nandinee/testafter/ --region ca-central-1 --acl public-read
