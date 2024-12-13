@@ -2,9 +2,9 @@
 
 Everyone looking for a job prepares a resume but how many have thought of revolutionizing the way the resume is made and published? Most people use Word processors or the like to edit pre-built templates and share PDF copies with the employers. Have you ever seen anyone combine version control systems, CI/CD pipeline, cloud-based storage, domain/DNS management and caching to build and share resumes? Read on to find out how I make it possible! 
 
-[Medium Article](https://appstasy-assets.s3.ca-central-1.amazonaws.com/nandinee/TESTynamo.pdf)
+[Medium Article](https://blogs.nandinibhatt.me/a-ci-cd-pipeline-to-publish-latex-documents-d35d9eba9300)
 ```
-https://appstasy-assets.s3.ca-central-1.amazonaws.com/nandinee/TESTynamo.pdf
+https://blogs.nandinibhatt.me/a-ci-cd-pipeline-to-publish-latex-documents-d35d9eba9300
 ```
 
 # Part 1 - Building a unique resume
