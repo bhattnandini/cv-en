@@ -1,6 +1,6 @@
 # A CI/CD pipeline to publish LaTeX documents
 
-Everyone looking for a job prepares a resume but how many have thought of revolutionizing the way the resume is made and published? Most people use Word processors or the like to edit pre-built templates and share PDF copies with the employers. Have you ever seen anyone combine version control systems, CI/CD pipeline, cloud-based storage, domain/DNS management and caching to build and share resumes? Read on to find out how I make it possible! 
+Everyone looking for a job prepares a resume but how many have thought of revolutionizing the way the resume is made and published? Most people use Word processors or the like to edit pre-built templates and share PDF copies with the employers. Have you ever seen anyone combine version control systems, CI/CD pipelines, cloud-based storage, domain/DNS management and caching to build and share resumes? Read on to find out how I make it possible! 
 
 [Medium Article](https://blogs.nandinibhatt.me/a-ci-cd-pipeline-to-publish-latex-documents-d35d9eba9300)
 ```
